@@ -5,25 +5,36 @@
     <meta name="author" content="Mason Wachter">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
     <title>A Breakfast Staple</title>
 </head>
 
 
 <body>
+<div class="container">
 
-    <h1>A Breakfast Staple</h1>
+    <header id="header">
+        <h1>A Breakfast Staple</h1>
+        <h2>Waffles</h2>
+    </header>
 
-    <h2>Waffles</h2>
+    <div id = "links">
+        <h3>Links</h3>
+        <ul>
+            <li><a href="">Waffle Recipe</a></li>
+            <li><a href="">Waffle - Wikipedia</a></li>
+            <li><a href="">Classic Waffles - AllRecipes</a></li>
+        </ul>
+    
 
-<p class="credit">
-  Recipe by: John Kanell (Preppy Kitchen), 
-  <a href="https://preppykitchen.com/waffle-recipe/" target="_blank">https://preppykitchen.com/waffle-recipe/</a>
-</p>
 
-<div class="wrapper">
+        <p class="credit">
+            Recipe by: <span class="author">John Kanell</span> (<span class="source">Preppy Kitchen</span>), 
+            <a href="https://preppykitchen.com/waffle-recipe/" target="_blank">https://preppykitchen.com/waffle-recipe/</a>
+        </p>
+    </div>
 
-    <div class ="box1">
+    <div id = "picture">
 
         <figure>
             <img src="images/waffleimage.jpg" alt="Waffle Image" height="250">
@@ -34,7 +45,50 @@
 
     </div>
 
-    <div class = "box2">
+    <div id = "rating">
+        <h3 class="rate">Rate This Recipe</h3>
+        <fieldset>
+            <legend>What skill level is this recipe?</legend>
+            <input type="radio" id="easy" name="easy"> Easy
+            <input type="radio" id="med" name="med"> Intermediate
+            <input type="radio" id="hard" name="hard"> Hard
+        </fieldset>
+        <p>&nbsp;</p>
+
+        <h3>Conversion</h3>
+            <input type="text" id="tblspn" name="tblspn">
+            =
+            <input type="text" id="cups" name="cups">
+
+    </div>
+
+    <div id = "ingredients">
+        
+        <h3>Ingredients</h3>
+
+        <ul>
+            <li>All-purpose flour</li>
+            <li>2 teaspoons to 1/4 cup of sugar depending on desired sweetness.</li>
+            <li>Baking powder</li>
+            <li>Whole or 2% milk</li>
+            <li>Eggs - room temperature eggs are best</li>
+            <li>Vanilla extract</li>
+        </ul>
+
+    </div>
+
+    <div id = "equipment">
+        <h3>Equipment</h3>
+
+        <ul>
+            <li>Waffle iron</li>
+            <li>Mixing bowl</li>
+            <li>Whisk or electric mixer</li>
+            <li>Measuring cups and spoons</li>
+        </ul>
+    </div>
+
+    <div id = "directions">
         
         <h3>Directions</h3>
 
@@ -50,60 +104,14 @@
         </ol>        
         
     </div>
-</div>
-<div class="wrapper">
 
-    <div class="box3">
-        
-        <h3>Ingredients</h3>
-
-        <ul>
-            <li>All-purpose flour</li>
-            <li>2 teaspoons to 1/4 cup of sugar depending on desired sweetness.</li>
-            <li>Baking powder</li>
-            <li>Whole or 2% milk</li>
-            <li>Eggs - room temperature eggs are best</li>
-            <li>Vanilla extract</li>
-        </ul>
-
-
-        
-    </div>
-    <div class="box4">
-
-        <h3>Conversion</h3>
-            <input type="text" id="tblspn" name="tblspn">
-            =
-            <input type="text" id="cups" name="cups">
-
-        <h3 class="rate">Rate This Recipe</h3>
-        <fieldset style="width: 250px;">
-            <legend>What skill level is this recipe?</legend>
-            <input type="radio" id="easy" name="easy"> Easy
-            <input type="radio" id="med" name="med"> Intermediate
-            <input type="radio" id="hard" name="hard"> Hard
-        </fieldset>
-        <p>&nbsp;</p>
-
-    </div>
-    
-    <!--
-        <h3>Equipment</h3>
-
-        <ul>
-            <li>Waffle iron</li>
-            <li>Mixing bowl</li>
-            <li>Whisk or electric mixer</li>
-            <li>Measuring cups and spoons</li>
-        </ul>
-    -->
-</div>
-
-<hr>
-
-<p>This page created as academic activity only.</p>
+    <footer id = "footer">
+        <p>This page created as academic activity only.</p>
+    </footer>
   
 
+
+</div>
 
 </body>
 </html>
